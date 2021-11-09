@@ -1,0 +1,257 @@
+/*===== Fonts ====*/
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@500;600;700&family=Dosis:wght@400;600&family=Lobster+Two:ital,wght@1,700&display=swap');
+/*===== Typography ====*/
+h1 {color: #F6F6F6;
+    font-family: 'Bodoni Moda', serif;
+    font-size: 52px;    
+    font-weight: 900;   }
+
+h2 {color: #191A19;
+    font-family: 'Bodoni Moda', serif;
+    font-size: 32px;    
+    font-weight: 900;   }
+
+h3 {color: #F6F6F6;
+    font-family: 'Bodoni Moda', serif;
+    font-size: 24px;    
+    font-weight: 700;   }
+
+h4 {color: #191A19;
+    font-family: 'Dosis', sans-serif;
+    font-size: 18px;    
+    font-weight: 500;   }  
+
+p  {color: #191A19;
+    font-family: 'Dosis', sans-serif;
+    font-size: 16px;    
+    font-weight: 500;   }
+
+p-l  {color: #F6F6F6;
+    font-family: 'Dosis', sans-serif;
+    font-size: 16px;    
+    font-weight: 500;   }
+
+
+a  {color: #191A19;
+    font-family: 'Dosis', sans-serif;
+    font-size: 18px;    
+    font-weight: 600;   }
+
+a:hover { color: #6D9886; }
+
+.btn-outline-light {color: #F6F6F6;
+    font-family: 'Dosis', sans-serif;
+    font-size: 18px;    
+    font-weight: 600;  border-radius: 0px; }
+
+.btn-outline-light:hover { color: #6D9886; }
+
+
+.btn-outline-dark {color: #191A19;
+    font-family: 'Dosis', sans-serif;
+    font-size: 18px;    
+    font-weight: 600;  border-radius: 0px; border-color:#6D9886 ; }
+
+.btn-outline-dark:hover { color: #F6F6F6; background-color:  #6D9886; border-color:#6D9886 ; }
+/*===== class elements ====*/
+.abs-center-x {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.centered-top {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/*===== icon ====*/
+.icon {font-size: 28px; margin-top: 10px;}
+.icon:hover {color: #6D9886}
+/*===== class align ====*/
+.center { text-align: center;
+         width: 100%; }
+.left
+       { text-align: left;
+        width: 100% }
+.right
+       { text-align: right;
+        width: 100% }
+
+
+
+
+/*===== card ====*/
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container-card {
+  padding: 0px 0px;
+}
+
+/*===== swiper ====*/
+
+.swiper { 
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img { 
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+/* ====== Img overlay ====== */
+.container2 {
+  position: relative;
+  width: 400px;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay { border-radius: 0px;
+  position: absolute;
+top: 0px;
+bottom: 0px;
+left: 0px;
+  right: 0;
+  height: 400px;
+  width: 400px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #F6F6F6;
+}
+
+.container2:hover .overlay {
+  opacity: 70%;
+}
+
+.text {
+  color: #212121;
+  font-size: 20px;
+  font-weight: 900;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.image:hover {background-color: #000;}
+
+.ins {width: 100%;}
+/*===== Card Products ====*/
+.card-P {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: #F6F6F6;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+.stretched-link::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    pointer-events: auto;
+    content: "";
+    background-color: rgba(0,0,0,0);
+}
+/*===== fonts ====*/
+
+.container1 {border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+ margin-left: 350px;
+ margin-right: 350px;}
+
+.fixalign { margin-right: 30px;
+            margin-top: 10px;
+            margin-bottom: 30px;
+            margin-left: 30px; }
+
+.fixalign2 { margin-right: 110px;
+            margin-top: 10px;
+            margin-bottom: 30px;
+            margin-left: 110px; }
+/*===== fonts ====*/
+.swiper-button-next { color: red; }
+/*===== fonts ====*/
+.padding-0{
+    padding-right:0;
+    padding-left:0;
+}
+/*===== fonts ====*/
+body {background-color: #F6F6F6;}
+.container1 {background-color: white;}
+
+/*===== fonts ====*/
